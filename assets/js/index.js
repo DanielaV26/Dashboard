@@ -1,20 +1,17 @@
-const ctx = document.getElementById('myChart');
+    const inputText = document.getElementById('inputText');
+    const boton = document.getElementById('submit');
 
-new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            y: {
-                beginAtZero: true
-            }
-        }
-    }
-});
+    boton.addEventListener('click', async (e) => {
+        e.preventDefault();
+
+        const query = inputText.value;
+
+        // Utilizamos nuestra API
+        const url = `https://pokeapi.co/api/v2/pokemon/${query}`;
+        const response = await fetch(url);
+        const dataPokemon = await response.json();
+        console.log(dataPokemon);
+
+        crearGrafico(dataPokemon);
+
+        });

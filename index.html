@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grafico con HTML</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"/>
 </head>
 
 <body>
-    <main class="container">
-        <div>
-            <canvas id="myChart"></canvas>
-        </div>
-    </main>
+
+    <h1>Gráfico de habilidades de Pokemones</h1>
+    <p>Cada especie Pokémon tiene su propia habilidad. Esta puede servir dentro del combate o fuera de él. Se asocian a condiciones especiales en las que esa especie se desenvuelve o le favorece alguna condición especial de su cuerpo o mente.</p>
+
+    <form>
+        <input id="inputText" type="text">
+        <button id="submit" type="submit">Buscar</button>
+    </form>
+
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <script src="assets/js/index.js"></script>
+    <script src="assets/js/index.js" type="module"></script>
 
 </body>
-
 </html>
