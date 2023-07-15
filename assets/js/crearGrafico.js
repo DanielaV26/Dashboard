@@ -1,12 +1,18 @@
 const ctx = document.getElementById('myChart');
+let graficoHabilidades;
+
+export const crearGrafico = (pokemon) => {
+    if (graficoHabilidades) {
+        graficoHabilidades.destroy();
+    }
 
     // Se crea el gráfico con Charts.js
     const colores = pokemon.stats.map(() =>
         `rgb(
-      ${Math.floor(Math.random() * 255)},
-      ${Math.floor(Math.random() * 255)},
-      ${Math.floor(Math.random() * 255)}
-    )`
+        ${Math.floor(Math.random() * 255)},
+        ${Math.floor(Math.random() * 255)},
+        ${Math.floor(Math.random() * 255)}
+        )`
     );
 
     graficoHabilidades = new Chart(ctx, {
@@ -23,3 +29,4 @@ const ctx = document.getElementById('myChart');
             ],
         },
     });
+};
