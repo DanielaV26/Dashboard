@@ -1,4 +1,6 @@
-    const inputText = document.getElementById('inputText');
+import { crearGrafico } from './crearGrafico.js'
+
+const inputText = document.getElementById('inputText');
     const boton = document.getElementById('submit');
 
     boton.addEventListener('click', async (e) => {
