@@ -16,9 +16,9 @@ const div = document.getElementById('mainPage');
         console.log(dataPokemon);
 
       div.innerHTML += `
-        <img src=${dataPokemon.sprites.front_default} alt=${dataPokemon.name}/>
+      <h2>${dataPokemon.name}</h2>
+      <img src=${dataPokemon.sprites.front_default} alt=${dataPokemon.name}/>
       `;
-
 
         crearGrafico(dataPokemon);
 
