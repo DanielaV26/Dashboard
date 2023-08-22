@@ -1,0 +1,88 @@
+/* Estilos básicos */
+body {
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	padding: 40px;
+	background-color: white;
+}
+
+h1 {
+	text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 35px;
+    background-color: rgb(39, 38, 38);
+    color: #ffffff;
+    padding: 40px;
+}
+
+p {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: rgb(73, 69, 69);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-container {
+    background-color:gray;
+    width: auto;
+    padding: 25px;
+    align-content: center;
+    position: relative;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+form {
+	display:flex;
+    position: relative;
+    padding: 20px 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style:italic;
+    font-size: 18px;
+    color: white;
+    width: 100%;
+    background-color: rgb(255, 179, 0);
+    text-align: center;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 10px;
+    align-content: center;
+}
+
+input[type="text"],
+textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+}
+
+button {
+	padding: 10px 20px;
+	background-color: orangered;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+    margin-left: 10px;
+}
+
+#myChart {
+    width: 100%;
+    height: auto;
+    padding: 60px;
+}
+
+#mainPage {
+    text-align: center;
+    font-size: 20px;
+    color:black;
+    background-color: rgba(8, 68, 164, 0.626);
+}
