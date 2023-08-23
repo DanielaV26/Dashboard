@@ -30,24 +30,23 @@ p {
     align-content: center;
     position: relative;
     border-radius: 5px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 form {
-	display:flex;
-    position: relative;
-    padding: 20px 20px;
-    margin-left: 40px;
-    margin-right: 40px;
+    display: flex;
+    flex-direction:row;
+    padding: 10px 10px;
+    margin-left: px;
+    margin-right: px;
 }
 
-label {
+h3 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style:italic;
     font-size: 18px;
     color: white;
-    width: 100%;
     background-color: rgb(255, 179, 0);
     text-align: center;
     border-radius: 10px;
@@ -85,4 +84,5 @@ button {
     font-size: 20px;
     color:black;
     background-color: rgba(8, 68, 164, 0.626);
+    padding: 25px;
 }
